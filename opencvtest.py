@@ -21,13 +21,18 @@ img3 = imutils.rotate_bound(image, 60)
 # Color spaces
 
 nimg = np.ones(image.shape, dtype=np.uint8) * 100
-cv2.imshow("nimg", nimg)
+# cv2.imshow("nimg", nimg)
 
 updated_img = cv2.add(image, nimg)
-cv2.imshow("Updated", updated_img)
+# cv2.imshow("Updated", updated_img)
 
 subt = cv2.subtract(image, nimg)
-cv2.imshow("subtracted", subt)
+# cv2.imshow("subtracted", subt)
+
+img4 = image[:, :, 2]
+cv2.imshow("channeltest", img4)
+print(image.shape)
+print(img4.shape)
 
 cv2.waitKey(0)
 print("End")
