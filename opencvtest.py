@@ -23,5 +23,11 @@ img3 = imutils.rotate_bound(image, 60)
 nimg = np.ones(image.shape, dtype=np.uint8) * 100
 cv2.imshow("nimg", nimg)
 
+updated_img = cv2.add(image, nimg)
+cv2.imshow("Updated", updated_img)
+
+subt = cv2.subtract(image, nimg)
+cv2.imshow("subtracted", subt)
+
 cv2.waitKey(0)
 print("End")
