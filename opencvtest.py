@@ -41,4 +41,4 @@ canvas = cv2.rectangle(image, (50, 50), (80, 80), red, -1)
 cv2.imshow("canvas", canvas)
 
 cv2.waitKey(0)
-print("End")
+# print("End")
