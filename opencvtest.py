@@ -35,10 +35,10 @@ img4 = image[:, :, 2]
 # print(img4.shape)
 red = (0, 0, 255)
 canvas = np.ones((500, 500, 3), dtype=np.uint8)
-cv2.imshow("before rect", canvas)
+# cv2.imshow("before rect", canvas)
 canvas = cv2.rectangle(canvas, (100, 100), (350, 350), red, -1)
 canvas = cv2.rectangle(image, (50, 50), (80, 80), red, -1)
 cv2.imshow("canvas", canvas)
 
 cv2.waitKey(0)
-# print("End")
+print("End")
