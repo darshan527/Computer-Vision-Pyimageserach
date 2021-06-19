@@ -30,9 +30,9 @@ subt = cv2.subtract(image, nimg)
 # cv2.imshow("subtracted", subt)
 
 img4 = image[:, :, 2]
-# cv2.imshow("channeltest", img4)
-# print(image.shape)
-# print(img4.shape)
+cv2.imshow("channeltest", img4)
+print(image.shape)
+print(img4.shape)
 red = (0, 0, 255)
 canvas = np.ones((500, 500, 3), dtype=np.uint8)
 # cv2.imshow("before rect", canvas)
