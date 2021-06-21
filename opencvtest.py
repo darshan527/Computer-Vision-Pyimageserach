@@ -27,7 +27,7 @@ updated_img = cv2.add(image, nimg)
 # cv2.imshow("Updated", updated_img)
 
 subt = cv2.subtract(image, nimg)
-# cv2.imshow("subtracted", subt)
+cv2.imshow("subtracted", subt)
 
 img4 = image[:, :, 2]
 cv2.imshow("channeltest", img4)
